@@ -5,16 +5,17 @@
 >**Asignatura:**            | Desarrollo de Aplicaciones Web            |
 >**Docente:**               | Jaime Suasnábar Terrel                    |
 >**Semestre:**              | IX                                        |
+
 ### I. OBJETIVO
-Usar y personalizar librerías de código CSS para el diseño responsive y para el diseño de componentes de una página web.
+Usar HTML y CSS para diseñar elementos utilizables en la web y para desarrollar componentes de una página web.
 
 ### II. FUNDAMENTO TEÓRICO
 #### Cascading Style Sheets
 CSS describe cómo se deben mostrar los elementos HTML en la pantalla.
 
 #### Sintaxis
-<img src="img/sinta" alt="image" width="300" height="auto">
 ![Sintaxis propiedad valor](./assets/sintaxis.png)
+
 #### Selectores
 **Selector Básicos**
 ```css
@@ -249,7 +250,7 @@ Diseñar un loader (animación de precarga) como un anillo que gira con animaci�
   100% { transform: rotate(360deg); }
 }
 ```
-### Ejercicio 2.4
+#### Ejercicio 2.4
 Diseñar La estructua de página responsiva
 ```html
 <!DOCTYPE html>
@@ -395,12 +396,15 @@ html {
   .col-12 {width: 100%;}
 }
 ```
-## Ejercicio 2.5
+#### Ejercicio 2.5
 Desarrollar una página web sólo usando html y CSS que contenga un sidebar con 2 modos de visualización: claro y oscuro. Agregar un botón para cambiar el modo.
 
 ![Sidebar](./assets/oscuro.png)
 
-## Ejercicio 2.6
+#### Ejercicio 2.6
 Desarrollar una página web sólo usando html y CSS que contenga un sidebar con 2 modos de visualización: contraido y expandidos. Agregar un botón para cambiar el modo.
 
 ![Sidebar](./assets/contraido.png)
+
+### IV. RESULTADOS
+Los resultados serán publicados en el portafolio electrónico del estudiante.
