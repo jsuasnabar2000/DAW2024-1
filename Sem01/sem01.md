@@ -1,7 +1,19 @@
-# Plugin Emmet
+## GUIA DE LABORATORIO N° 2
+>Intitución                 |Universidad Nacional del Centro del Perú   |
+>-------------------------  | ------------------------------            |
+>**Programa de Estudios:**  | Ingeniería de Sistemas                    |
+>**Asignatura:**            | Desarrollo de Aplicaciones Web            |
+>**Docente:**               | Jaime Suasnábar Terrel                    |
+>**Semestre:**              | IX                                        |
+
+### I. OBJETIVO
+Usar HTML y CSS para diseñar elementos utilizables en la web y para desarrollar componentes de una página web.
+
+### II. FUNDAMENTO TEÓRICO
+#### Plugin Emmet
 Es una herramienta que encuentras de manera integrada en tu editor de código, para agilizar tu proceso de desarrollo al escribir código HTML y CSS, más rápido y ahorrándote errores tipográficos.
 
-## Etiquetas hermanos e hijos
+#### Etiquetas hermanos e hijos
 Podemos especificar etiquetas hermanos e hijos usando los caracteres + y >.
 ```html
     section+section —> 
@@ -12,7 +24,7 @@ Podemos especificar etiquetas hermanos e hijos usando los caracteres + y >.
         <li></li>
     </ul>
 ```
-## Multiplicación de etiquetas
+#### Multiplicación de etiquetas
 Podemos multiplicar etiquetas con *.
 ```html
     p*3 —> 
@@ -26,16 +38,16 @@ Podemos multiplicar etiquetas con *.
         <li></li>
     </ul>
 ```
-## Agrupar etiquetas
+#### Agrupar etiquetas
 Podemos agrupar para crear generadores complejos con {} o ()
 `
 nav#menu>ul.nav-menu>(li.nav-menu-items>a)*3
 `
-## Definir contenido
+#### Definir contenido
 Usando corchetes puedes agregar contenido
 
 `h1{Hola}`
-## Clases
+#### Clases
 Para definir una clase junto con la etiqueta, simplemente agregar así:
 ```html
     div.wrapper —> 
@@ -43,19 +55,19 @@ Para definir una clase junto con la etiqueta, simplemente agregar así:
     h1.header.center —> 
     <h1 class="header center"></h1>
 ```
-## ID’s
+#### ID’s
 Los Id funcionan de manera muy similar:
 ```html
     div#hero —> 
     <div id="hero"></div>
 ```
-## Atributos
+#### Atributos
 También podemos especificar atributos para las etiquetas:
 ```html
 img[src="cat.jpg"][alt="foto de gato"] —> 
 <img src="cat.jpg" alt="foto de gato" />
 ```
-## Enumerar iteración $
+#### Enumerar iteración $
 Podemos numerar elementos en secuencia usando un signo de dólar ($).
 ```html
     ul>li{Item $}*3 —> 
@@ -67,3 +79,11 @@ Podemos numerar elementos en secuencia usando un signo de dólar ($).
 ```
 
 Incluso puede personalizar la secuencia de numeración rellenando con ceros, comenzando con un número específico e incluso en la dirección inversa.
+
+
+
+### III. EJERCICIOS DE LABORATORIO
+Los ejerciicos están propuestos en la práctica calificada.
+
+### IV. RESULTADOS
+Los resultados serán publicados en el portafolio electrónico del estudiante.
