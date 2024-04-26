@@ -1,4 +1,4 @@
-## GUIA DE LABORATORIO N° 2
+## GUIA DE LABORATORIO N° 1
 >Intitución                 |Universidad Nacional del Centro del Perú   |
 >-------------------------  | ------------------------------            |
 >**Programa de Estudios:**  | Ingeniería de Sistemas                    |
@@ -7,7 +7,7 @@
 >**Semestre:**              | IX                                        |
 
 ### I. OBJETIVO
-Usar HTML y CSS para diseñar elementos utilizables en la web y para desarrollar componentes de una página web.
+Usar apropiadamente el Editor Visual Studio Code mediante el plugin Emmet y atajos de teclado de VSC.
 
 ### II. FUNDAMENTO TEÓRICO
 #### Plugin Emmet
