@@ -1,0 +1,24 @@
+.btn {
+    border: none; /* Remove borders */
+    border-radius: 10px;
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    
+  }
+  
+  /* Green */
+  .btn-success {background-color: #04AA6D;} 
+  .btn-success:hover {background-color: #46a049;}
+   /* Blue */
+  .btn-info {background-color: #2196F3;}
+  .btn-info:hover {background: #0b7dda;}
+  /* Orange */
+  .btn-warning {background-color: #ff9800;} 
+  .btn-warning:hover {background: #e68a00;}
+  /* Red */
+  .btn-danger {background-color: #f44336;} 
+  .btn-danger:hover {background: #da190b;}
+  /* Gray */
+  .btn-default {background-color: #e7e7e7; color: black;} 
+  .btn-default:hover {background: #ddd;}
