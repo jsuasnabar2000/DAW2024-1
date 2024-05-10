@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h3 class="titulo">Ejercicio 01: Manipular el HTML con un click</h3>
+    <p id="parrafo1">Texto1</p>
+    <button type="button" onclick="modificandoDom()" class="btn success">Hacer Click!</button>
+    <script>
+        function modificandoDom() {
+            let parrafo1=document.getElementById('parrafo1');
+            parrafo1.innerHTML='Cambiando el DOM' + Date();
+        }
+    </script>
+
+
+     <h3 class="titulo">Ejercicio 02: Manipular el HTML con un AddEventListener</h3>
+    <form action="">
+        <label for="">Ingrese un texto:</label>
+        <input type="text" name="" id="idinput">
+        <p id="idparrafo">Texto2</p>
+    </form>
+    
+    <script>
+        let txt=document.getElementById("idinput");
+        txt.addEventListener("keyup", cambiandoParrafo);
+        function cambiandoParrafo() {
+            let parrafo1=document.getElementById("idparrafo");
+            parrafo1.innerHTML=txt.value;
+        }
+    </script>
+
+    <h3 class="titulo">Ejercicio 03: Manipular el HTML con un AddEventListener</h3>
+    <form action="">
+        <label for="field1">X</label> <input id="num1" type="text" value="">
+        <label for="field2">Y</label> <input id="num2" type="text" value="">
+        <button type="button" onclick="calculateSum()" class="btn danger">Sumar</button>  
+        <p id="sumando">Result:</p>
+    </form>
+    <script>
+        function calculateSum() {
+            let x,y,suma,text;  
+            x = document.getElementById("num1").value;  
+            y = document.getElementById("num2").value;  
+            if (isNaN(x) || isNaN(y)) {  
+                text = "Es necesarios introducir dos números válidos";  
+            } else {  
+                //si no ponemos parseFloat concatenaría x con y  
+                suma=parseFloat(x)+parseFloat(y);  
+                text= suma;  
+            }  
+            document.getElementById("sumando").innerHTML = "Result: "+text;  
+        }
+    </script>
+</body>
+</html>
