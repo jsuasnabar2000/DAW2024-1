@@ -190,19 +190,19 @@ Desarrollar una aplicación web que utilice usestate con tres componentes:
 2. Componente2: es una instancia del mismo componente1, pero su color modificado a verde durante su instanciación.
 3. Componente3: es un div de fondo de color celeste y tiene con su fotografia con fondo transparente.
 >Implementar un código en el boton para cambiar el color de fondo aleatoriamente en los 3 componentes. 
-![imagen](./assets/cuadricula.png)
+
 #### Ejercicio 10.2
 Desarrollar una aplicación web con hooks personalizados y useEffect para crear un widget (150px x 150px) con una imagen(5 imagenes) que cambia aleatoriamente cada 30 segundos.
-![imagen](./assets/cuadricula.png)
+
 #### Ejercicio 10.3
 Desarrollar una aplicación web CRUD para gestionar los datos de un empleado(id, name, address, city) que permita agregar, editar y eliminar objetos utilizando useContext y useReducer. Además el objeto deberá guardar y recuperar del LocalStorage.
-![imagen](./assets/cuadricula.png)
+
 #### Ejercicio 10.4
 En Ejercicio 10.4 agregar las funcionalidades de:
 1. Agregar un botón para Mostrar los datos completos del empleado en un card.
 2. Agregar un input text y button para filtrar datos de los empleados
 3. Agregar una barra de paginación que permita mostrar 8 empleados por página. 
-![imagen](./assets/cuadricula.png)
+
 
 ### V. RESULTADOS
 Los resultados serán publicados en el portafolio electrónico del estudiante.
