@@ -1,0 +1,25 @@
+# EXTENSIONS
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.swp
+*.t3x
+*.tar.gz
+*.tar
+*.zip
+
+# Ignora la carpeta node_modules
+node_modules
+
+# Ignora todos los archivos de texto
+*.txt
+
+# Ignora los archivos relacionados a API keys
+.env
+
+# Ignora archivos de configuración SASS
+.sass-cache

@@ -1,4 +1,4 @@
-## <center>GUIA DE LABORATORIO N° 3<center>
+## <center>GUIA DE LABORATORIO N° 4<center>
 >Intitución                 |Universidad Nacional del Centro del Perú   |
 >-------------------------  | ------------------------------            |
 >**Programa de Estudios:**  | Ingeniería de Sistemas                    |
@@ -6,7 +6,7 @@
 >**Docente:**               | Jaime Suasnábar Terrel                    |
 >**Semestre:**              | IX                                        |
 ### I. OBJETIVO
-Desarrollar aplicaciones dinámicas mediuante la re.
+Desarrollar aplicaciones dinámicas con JavaScript.
 
 ### II. FUNDAMENTO TEÓRICO
 #### Frameworks CSS

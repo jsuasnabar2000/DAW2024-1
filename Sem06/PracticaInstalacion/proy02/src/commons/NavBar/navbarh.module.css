@@ -1,0 +1,26 @@
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-family: sans-serif;
+	background-color: black;
+}
+ul li{
+display: inline-block;
+margin: 0 3px;
+}
+a{
+color: white;
+text-decoration: none;
+background-color: blueviolet;
+padding: 0 10px;
+border-radius: 5px;
+}
+a:hover{
+background-color: rgb(49, 88, 88);
+}
+h1{
+	color: white;
+	padding: 0 5px;
+}
