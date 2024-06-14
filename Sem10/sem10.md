@@ -189,7 +189,7 @@ Desarrollar una aplicación web que utilice usestate con tres componentes:
 1. Componente1 es un div de fondo de color azul tiene un botón centrado vertical y horizontalmente.
 2. Componente2: es una instancia del mismo componente1, pero su color modificado a verde durante su instanciación.
 3. Componente3: es un div de fondo de color celeste y tiene con su fotografia con fondo transparente.
-Implementar un código en el boton para cambiar el color de fondo aleatoriamente en los 3 componentes. 
+>Implementar un código en el boton para cambiar el color de fondo aleatoriamente en los 3 componentes. 
 ![imagen](./assets/cuadricula.png)
 #### Ejercicio 10.2
 Desarrollar una aplicación web con hooks personalizados y useEffect para crear un widget (150px x 150px) con una imagen(5 imagenes) que cambia aleatoriamente cada 30 segundos.
