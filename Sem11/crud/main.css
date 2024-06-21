@@ -1,0 +1,140 @@
+*{
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.container-header{
+  display: flex;
+  background-color: rgb(38, 52, 120);
+  color: white;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.container-footer{
+  display: flex;
+  background-color: rgba(21, 21, 20, 1);
+  color: aliceblue;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.container-center{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+}
+.container-aside{
+  flex: 2;
+  background-color: rgb(38, 52, 120);
+  color: white;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-main{
+  flex: 3;
+  background-color: rgb(201, 209, 194);
+  padding: 1rem;
+  color: rgb(35, 32, 32);
+}
+.aside-link{
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: rgb(25, 25, 26);
+  padding: 10px;
+  margin: 2px;
+  /*text-align: center;*/
+
+  color: rgb(242, 242, 236);
+  display: block;
+  }
+.aside-link:hover{
+  background-color: rgb(128, 13, 105);
+
+}
+.div-img{
+  text-align: center;
+  padding: 10px;
+}
+.img-user{
+  background-color: bisque;
+  border-radius: 50%;
+  max-width: 100px;
+}
+
+
+
+/*PARTE 2*/
+.form-input1{
+	display: block;
+	width: 90%;
+	margin: 5px 0;
+	padding: 10px 12px;
+	background-clip: padding-box;
+	border: none;
+	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+	height: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5%;
+	color: #111111;
+	background-color: #e5e5e5;
+	border-color: #e5e5e5;
+  }
+  
+  .main-title{
+	text-align:center;
+	margin-bottom: 5px;
+  }
+  .main-button{
+	background-color: #04AA6D; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color: white; 
+	color: black; 
+	border: 2px solid #04AA6D;
+  }
+  .main-button:hover {
+	background-color: #04AA6D;
+	color: white;
+  }
+  .div-container{
+	padding: 1rem;
+  }
+
+/*tabla*/
+.table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 90%;
+	border: 1px solid #ddd;
+	justify-content: left;
+  }
+  thead{
+	background-color: black;
+	color: white;
+  }
+  
+  th, td {
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #f2f2f2;
+  }

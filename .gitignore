@@ -14,7 +14,8 @@
 
 # Ignora la carpeta node_modules
 node_modules
-
+# Ignora la carpeta ejems
+ejems
 # Ignora todos los archivos de texto
 *.txt
 
