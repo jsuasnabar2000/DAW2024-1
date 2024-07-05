@@ -81,7 +81,7 @@ Puedes escribir el equivalente XML de la sintaxis anterior de la siguiente maner
 </html>
 ```
 ### IV. EJERCICIOS DEL LABORATORIO
-Los ejercicios deberán ser desarrollados con JSP puro sin servlets ni sppring con la ultima versión de Tomcat 11 y JDK-24. En otras versiones se califica con 0.
+Los ejercicios deberán ser desarrollados con **JSP puro sin servlets ni spring** con la ultima versión de Tomcat 11 y JDK-24. En otras versiones se califica con 0.
 #### Ejercicio 11.1
 Desarrollar un formulario con nombre apellidos (input text) genero (input radio) pasatiempos: futbol, natación, lectura (input check) capturar los datos y mostrarlos en otro archivo jsp mediante el método get. 
 
@@ -94,7 +94,6 @@ Declare un array multidimensional con los datos de 10 estudiantes y mostrarlos e
 
 #### Ejercicio 11.4
 Desarrolle un CRUD completo en JSP con una base de datos en MySQL utilizando JDBC para una tabla estudiante
-
 
 ### V. RESULTADOS
 Los resultados serán publicados en el portafolio electrónico del estudiante.
