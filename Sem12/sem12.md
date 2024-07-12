@@ -88,7 +88,6 @@ Desarrollar un formulario con nombre apellidos (input text) genero (input radio)
 #### Ejercicio 11.2
 Desarrollar un formulario con nombre apellidos (input text) genero (input radio) pasatiempos: futbol, natación, lectura (input check) capturar los datos y mostrarlos en otro archivo jsp mediante el método post. 
 
-
 #### Ejercicio 11.3
 Declare un array multidimensional con los datos de 10 estudiantes y mostrarlos en un JSP que muestre una tabla estilizada con css. 
 
