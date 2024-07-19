@@ -179,20 +179,120 @@ verform.jsp
 </body>
 </html>
 ```
+#### SPRING FRAMEWORK
 
+>El **Spring Framework** proporciona un modelo de programación y configuración completo para aplicaciones empresariales modernas basadas en Java, sobre cualquier tipo de plataforma de implementación. Integra los diferentes patrones de diseño en la programación.
+
+>**Patron de Diseño: Inyección de dependencia (DI)**
+La inyección de dependencia, es un tipo de inversion de control, donde el manejo de las propiedades de un objeto, son inyectadas a través de un constructor, un setter, un servicio, etc. Creando de esta manera un control diferente para un comportamiento más conveniente en nuestra aplicación.
+![imagen](./assets/di.png)
+
+#### MÓDULOS SPRING
+Spring Framework comprende diversos módulos que proveen un rango de servicios:
+* **Contenedor de inversión de control:**
+Permite la administración del ciclo de vida de los objetos Java, se lleva a cabo principalmente a través de la inyección de dependencias.
+* **Programación orientada a aspectos:**
+Habilita la implementación de rutinas transversales.
+* **Acceso a datos:**
+Se trabaja con RDBMS en la plataforma java, usando Java Database Connectivity y herramientas de Mapeo objeto relacional con bases de datos NoSQL.
+* **Gestión de transacciones:**
+Unifica distintas APIs de gestión y coordina las transacciones para los objetos Java.
+Modelo vista controlador: Un framework basado en HTTP y servlets, que provee herramientas para la extensión y personalización de aplicaciones web y servicios web REST.
+* **Framework de acceso remoto:** 
+Permite la importación y exportación estilo RPC, de objetos Java a través de redes que soporten RMI, CORBA y protocolos basados en HTTP incluyendo servicios web (SOAP).
+* **Autenticación y Autorización:**
+Procesos de seguridad configurables que soportan un rango de estándares, protocolos, herramientas y prácticas a través del subproyecto Spring Security (antiguamente Acegi).
+* **Administración Remota:**
+Configuración de visibilidad y gestión de objetos Java para la configuración local o remota vía JMX.
+* **Mensajes:** 
+Registro configurable de objetos receptores de mensajes, para el consumo transparente desde la a través de JMS, una mejora del envío de mensajes sobre las API JMS estándar.
+* **Testing:** Soporte de clases para desarrollo de unidades de prueba e integración.
+#### SPRING BOOT
+Spring Boot es una herramienta que permite crear proyecto con Spring Framework, eliminando la complejidad de las configuraciones, instalación de dependencias además integrando un servidor de pruebas para desplegar la aplicación en desarrollo.
+
+Ver [Documentación Spring Boot](https://spring.io/projects/spring-boot)
+ 
+#### SERVICIOS API
+
+>**¿Qué es un Servicio API?**
+API es acrónimo de Interfaz de Programación de Aplicaciones (del inglés Application Programming Interface), es un conjunto de protocolos y definiciones que pueden permitir que una aplicación se comunique con la otra. El formato de intercambio de datos normalmente es JSON o XML.
+
+>**¿Para qué necesitamos una API?**
+*	Intercambio de información entre aplicaciones.
+*	Proveer el servicio a las aplicaciones web
+*	Proveer el servicio a las aplicaciones moviles
+
+>**ENDPOINTS - API REST**
+El conjunto de reglas API REST definen las operaciones CRUD (Create, Read, Update y Delete) se establecen a través de los:
+ENDPOINT = METHOD HTTP + URL SEGMENT + QUERY PARAMS
+
+>Descripción                |	Método	|   Segmento de URL |
+>---------------------------|-----------|-------------------|
+>Listar todos los clientes	|   GET	    |   /courses        |
+>Obtener un solo cliente	|   GET	    |   /courses/{id}   |
+>Crear u nuevo cliente	    |   POST	|   /courses        |
+>Editar un cliente	        |   PUT	    |   /courses/{id}   |
+>Borrar un cliente	        |   DELETE	|   /courses/{id}   |
+
+> **Controllers**
+```java
+@RestController
+public class Rutas {
+    @GetMapping("/home")
+    String home(){
+        return "Desde ruta Home";
+    }
+    @GetMapping("/students")
+    String student1(){
+        return "Desde Student1 Hola";
+    }
+    @GetMapping("/students/{fname}")
+    String student2(@PathVariable String fname){
+        return "Desde Student2 Hola: "+fname;
+    }
+    @GetMapping("/student/{fname}/{lname}")
+    String student3(@PathVariable String fname, @PathVariable String lname){
+        return "Desde Student2 Hola: "+fname+" "+lname;
+    }
+    @GetMapping("/student/{name}")
+    String student4(@PathVariable String name, @RequestParam int nota1, @RequestParam int nota2){
+        return "Desde Student2 Hola: "+name+" tienes "+nota1+" y "+nota2;
+    }
+    @GetMapping("/studentsa")
+    @ResponseStatus(value = HttpStatus.ACCEPTED)
+    String student5(){
+        return "Desde Student5 Status";
+    }
+    @GetMapping("/datajson/v2")
+    public Map<String, Map<String, Object>> getProvinciaData(){
+        return Map.of("Distrito", Map.of("id",1, "name", "El Tambo"));
+    }
+}
+```
+> **Models**
+```java
+@Entity
+@Table(name = "students")
+public class Student {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    private String name;
+    private String address;
+    private String city;
+}    
+```
 ### IV. EJERCICIOS DEL LABORATORIO
-Los ejercicios deberán ser desarrollados con **JSP puro sin servlets ni spring** con la ultima versión de Tomcat 11 y JDK-24. En otras versiones se califica con 0.
-#### Ejercicio 11.1
-Desarrollar un formulario con nombre apellidos (input text) genero (input radio) pasatiempos: futbol, natación, lectura (input check) capturar los datos y mostrarlos en otro archivo jsp mediante el método get. 
+Los ejercicios **no entregables** deberán ser desarrollados con **Spring 3** con la ultima versión de Java 22. No se calificará.
+#### Ejercicio 13.1
+Desarrolle un controlador de API que compruebe que el id y nota de la ruta “/student/{id}/{nota}” son números. En caso de certeza mostrar un json que contiene el id, nota, un mensaje de ruta válida y el estado 202.
+#### Ejercicio 13.2
+Desarrolle un controlador de API con los id y notas según la siguiente ruta “/student/{id}?nota1=xx&nota2=xx&nota3=xx”. Que muestre un json que contiene el id, promedio, un mensaje de ruta válida y el estado 202.
+#### Ejercicio 13.3
+Diseñar y desarrolle una API REST para que devuelva datos desde una base de datos de 3 tablas departamento(id, name), provincia(id, name) y distrito(id, name).
+#### Ejercicio 13.4
+Diseñar y desarrolle una API REST para realizar las operaciones CRUD desde y hacia una base de datos de 3 tablas departamento(id, name), provincia(id, name) y distrito(id, name).
 
-#### Ejercicio 11.2
-Desarrollar un formulario con nombre apellidos (input text) genero (input radio) pasatiempos: futbol, natación, lectura (input check) capturar los datos y mostrarlos en otro archivo jsp mediante el método post. 
-
-#### Ejercicio 11.3
-Declare un array multidimensional con los datos de 10 estudiantes y mostrarlos en un JSP que muestre una tabla estilizada con css. 
-
-#### Ejercicio 11.4
-Desarrolle un CRUD completo en JSP con una base de datos en MySQL utilizando JDBC para una tabla estudiante
 
 ### V. RESULTADOS
 Los resultados serán publicados en el portafolio electrónico del estudiante.
