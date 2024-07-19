@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.jsuasnabar</groupId>
-	<artifactId>api02</artifactId>
+	<artifactId>api01</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api2</name>
+	<name>api01</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

@@ -9,23 +9,25 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/empleados")
 public class EmployeeController {
     @Autowired
     EmployeeService employeeService;
-    //@GetMapping("/empleados")
+
+    @GetMapping("/empleados")
     public ArrayList<EmployeeModel> obtenerEmpleados(){
         return employeeService.obtenerEmpleados();
     }
-    @GetMapping(path="/{id}")
+
+    @GetMapping(path="/empleados/{id}")
     public Optional<EmployeeModel> obtenerEmpleado(@PathVariable("id") Long id){
         return employeeService.obtenerEmpleado(id);
     }
-    @PostMapping()
+
+    @PostMapping("/empleados")
     public EmployeeModel guardarEmpleado(@RequestBody EmployeeModel employeeModel){
         return employeeService.guardarEmpleado(employeeModel);
     }
-    @DeleteMapping(path="/{id}")
+    @DeleteMapping(path="/empleados/{id}")
     public String eliminarEmpleado(@PathVariable("id") Long id){
         boolean eliminado = employeeService.eliminarEmpleado(id);
         if(eliminado){
